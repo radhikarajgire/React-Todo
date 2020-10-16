@@ -54,7 +54,7 @@ function ListItem(props) {
   return (
     <div className="list-item row jc-space-between">
       <span className={props.itemData.isComplete?"task-complete":""} onClick ={()=>props.markComplete(props.index)}>{props.itemData.description}</span>
-      <img src={trashIcon} className="delete-icon" onClick={() => props.deleteTask(props.index)}/>
+      <img src={trashIcon} alt="trash" className="delete-icon" onClick={() => props.deleteTask(props.index)}/>
     </div>
   );
 }
